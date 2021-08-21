@@ -8,54 +8,63 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/Ensamblaje.css">
 </head>
-<body>
+<body id="Body">
     <header id="header">
-        <div id="navegador">
+        <div id="navbar">
             <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/Template/Nvidea.html">NVIDIA</a></li>
-            <li><a href="/Template/Amd.html">AMD</a></li>
-            <li><a href="/Template/Ensamblaje.html">Ensamblaje</a></li>
-            </ul>
-            </div>
+              <li>
+                <a href="/index.html">Diseñadores de GPU</a>
+              </li>
+        
+              <li>
+                <a href="/Template/Nvidea.html">Nvidia</a>
+              </li>
+        
+              <li>
+                <a href="Amd.html">Amd</a>
+              </li>
+        
+              <li>
+                <a href="/Template/Ensamblaje.html">Ensambladores</a>
+              </li>
+        
+            </ul> 
+          </div>
     </header>
     <main id="main">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, vitae accusantium. Tenetur natus dolorem aliquam dolorum culpa, nobis aliquid nisi ab, aspernatur exercitationem at in qui quas quis facilis iure!
-        Neque cupiditate pariatur ratione architecto. Adipisci nam saepe magnam a deserunt voluptatum eum vero in facilis magni sunt odit ullam, soluta laborum obcaecati necessitatibus cupiditate accusantium accusamus sint ab. Quos.</p>
-        <table>
+        <h6 class="texto"><h3>Ensambladores:</h3><br> <h5>integran las GPU proporcionadas por los fabricantes con el resto de la tarjeta, de diseño propio. De ahí que tarjetas con el mismo chip tengan formas o conexiones diferentes o puedan dar ligeras diferencias de rendimientos, en especial tarjetas gráficas modificadas o subidas de fábrica. <br> <br> En la tabla adjunta se muestra una relación de los dos diseñadores de chips y algunos de los ensambladores de tarjetas con los que trabajan.</h5>
+        <table class="table table-dark" id="tabla">
             <tr>
-              <th>Fabricante</th>
-              <th>Ensambladores</th> 
+              <th class="columna">Fabricante</th>
+              <th class="columna">Ensambladores</th>
             </tr>
             <tr>
-              <td>Nvidia</td>
-              <td>
+              <td class="tabla_imagen"><img src="/Recurso/img/Nvidia/Nvidia.jpg" alt="Nvidia" class="tabla_imagen"></td>
+              <td class="text_tabla">
                   <ol>
-                      <li>Nvidia</li>
-                      <li>EVGA</li>
-                      <li>ASUS</li>
-                      <li>GIGABYTE</li>
-                      <li>MSI</li>
-                      <li>Club3d</li>
-                      <li>PNY</li>
+                      <li><img src="/Recurso/img/Nvidia/Ensamble/Nvidia.png" alt="Nvidia"></li>
+                      <li><img src="/Recurso/img/Nvidia/Ensamble/EVGA.png" alt="evga"></li>
+                      <li><img src="/Recurso/img/Nvidia/Ensamble/ASUS.png" alt="ASUS"></li>
+                      <li><img src="/Recurso/img/Nvidia/Ensamble/GIGABYTE.png" alt="GIGABYTE"></li>
+                      <li><img src="/Recurso/img/Nvidia/Ensamble/MSI.png" alt="MSI"></li>
+                      <li><img src="/Recurso/img/Nvidia/Ensamble/pny.png" alt="PNY"></li>
                 </ol>
             </td>
             </tr>
             <tr>
-                <td>AMD</td>
-                <td>
+                <td class="tabla_imagen"><img src="/Recurso/img/AMD/AMD.jpg" alt="AMD" class="tabla_imagen"></td>
+                <td class="text_tabla">
                     <ol>
-                        <li>AMD</li>
-                        <li>Sapphire</li>
-                        <li>PowerColor</li>
-                        <li>ASUS</li>
-                        <li>MSI</li>
-                        <li>DIAMOND</li>
-                        <li>XFX</li>
-                        <li>GIGABYTE</li>
+                        <li><img src="/Recurso/img/AMD/Ensamble/AMD2.png" alt="AMD"></li>
+                        <li><img src="/Recurso/img/AMD/Ensamble/sapphire.png" alt="sapphire"></li>
+                        <li><img src="/Recurso/img/AMD/Ensamble/PowerColor.png" alt="PowerColor"></li>
+                        <li><img src="/Recurso/img/AMD/Ensamble/ASUS.png" alt="ASUS"></li>
+                        <li><img src="/Recurso/img/AMD/Ensamble/MSI.png" alt="MSI"></li>
+                        <li><img src="/Recurso/img/AMD/Ensamble/XFX.png" alt="XFX"></li>
+                        <li><img src="/Recurso/img/AMD/Ensamble/GIGABYTE.png" alt="GIGABYTE"></li>
                     </ol>
                 </td>      
-
+                </tr>
           </table>
     </main>
 </body>

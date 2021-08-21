@@ -1,28 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 *{
     padding: 0%;
     margin: 0%;
-    background: fff;
 }
-#navegador ul{
-    list-style-type: none;
-    text-align: center;
+:root {
+   --blue: #6257ff;
  }
- #navegador li{
-    display: inline;
-    text-align: center;
-    margin: 0 10px 0 0;
- }
- #navegador li a {
-    padding: 2px 7px 2px 7px;
-    color: #666;
-    background-color: #eeeeee;
-    border: 1px solid #ccc;
-    text-decoration: none;
- }
- #navegador li a:hover{
-    background-color: #333333;
-    color: #ffffff;
- }
+ #navbar {
+   width: 100vw;
+   font-weight: bold;
+   background-color: #192024;
+   }
+   ul {
+     margin: 0;
+     list-style-type: none;
+     display: flex;
+     justify-content: flex-end;
+     align-items: center;
+     padding: 1em 0;
+   }
+     li first-child {
+       margin-right: auto;
+       margin-left: 3em;
+     }
+ 
+     li a {
+       color: white;
+       text-decoration: none;
+       padding-right: 5em;
+       position: relative;
+         transition: all ease-in-out 550ms;
+     }
+ 
+     li a::after {
+       content: "";
+       position: absolute;
+       display: block;
+       height: 0.4em;
+       width: 0%;
+       background-color: var(--blue);
+       bottom: -1em;
+       transition: all ease-in-out 250ms;
+     }
+ 
+     li a:hover::after {
+       width:60%;
+     }
+     
+     li a:hover{
+       color:var(--blue);
+     }
  table, th, td {
     border: 2px solid black;
   }
@@ -33,3 +65,48 @@
   li {
     list-style-type: none;
   }
+  #Body{
+   background: #a5e8f0;
+  }
+  h5{
+   font-family: 'Arvo', serif;
+   width: 75%;
+   text-align: justify;
+   margin-bottom: 5%;
+   font-size: 1.3rem;
+  }
+#main{
+   display: grid;
+   padding: 5%;
+   padding-left: 5%;
+   grid-template-areas:"texto" 
+                        "tabla";
+}
+.text_tabla{
+   font-family: 'Nunito', sans-serif;
+}
+.columna{
+   font-family: 'PT Sans', sans-serif;
+   font-size: 1rem;
+}
+h3{
+   font-family: 'Staatliches', cursive;
+}
+img{
+   width: 20%;
+}
+.tabla_imagen{
+   width: 40%;
+}
+@media(max-width: 600px){
+  #navbar{
+    width: auto;
+  }
+   #main{
+       grid-template-areas:"header"
+                           "texto" 
+                           "tabla";
+       width: auto;
+       margin-top: 5%;
+   }
+}

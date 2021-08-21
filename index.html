@@ -4,31 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOG</title>
+    <title>Diseñadores</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body id="Body">
     <header id="header">
-        <div id="navegador">
+        <div id="navbar">
             <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="/Template/Nvidea.html">NVIDIA</a></li>
-            <li><a href="/Template/Amd.html">AMD</a></li>
-            <li><a href="/Template/Ensamblaje.html">Ensamblaje</a></li>
-            </ul>
-            </div>
+              <li class="li1">
+                <a href="index.html">Diseñadores de GPU</a>
+              </li>
+        
+              <li class="li2">
+                <a href="/Template/Nvidea.html">Nvidia</a>
+              </li>
+        
+              <li class="li3">
+                <a href="/Template/Amd.html">Amd</a>
+              </li>
+        
+              <li class="li4">
+                <a href="/Template/Ensamblaje.html">Ensambladores</a>
+              </li>
+        
+            </ul> 
+          </div>
     </header>
     <main id="main">
-        <div class="nvidia" id="nvidia">
-            <img src="/Recurso/img/Nvidia/Nvidia.jpg" alt="Nvidia">
+      <h1 class="encabezado">En el mercado de las tarjetas gráficas hay que distinguir dos tipos de empresas <br>Diseñadores de GPU: diseñan y generan exclusivamente la GPU. Los dos más importantes son</h1>
+        <div class="container">
+            <div class="row">
+              <div class="col" id="nvidia">
+                <img src="/Recurso/img/Nvidia/Nvidia.jpg" alt="Nvidia">
             <p class="datos_nvidia">Nvidia Corporation es una empresa multinacional especializada en el desarrollo de unidades de procesamiento gráfico y tecnologías de circuitos integrados para estaciones de trabajo, ordenadores personales y dispositivos móviles. Con sede en Santa Clara, California,3​ la compañía se ha convertido en uno de los principales proveedores de circuitos integrados (CI), como unidades de procesamiento gráfico (GPU) y conjuntos de chips usados en tarjetas gráficas para consolas y tarjetas madre para PC.</p>
-
-        </div>
-       
-        <div class="amd" id="amd">
-            <img src="/Recurso/img/AMD/AMD.jpg" alt="amd">
-            <p class="datos_amd">Advanced Micro Devices, Inc. (AMD) es una compañía estadounidense de semiconductores con sede en Santa Clara, California, que desarrolla procesadores de computación y productos tecnológicos similares de consumo. Sus productos principales incluyen microprocesadores, chipsets para placas base, circuitos integrados auxiliares, procesadores embebidos y procesadores gráficos para servidores, estaciones de trabajo, computadores personales y aplicaciones para sistemas embebidos.</p></div>
+            <a href="/Template/Nvidea.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Catalogo de grafica Nvidia</a>
+              </div>
+              <div class="col" id="AMD">
+                <img src="/Recurso/img/AMD/AMD.jpg" alt="amd">
+            <p class="datos_amd">Advanced Micro Devices, Inc. (AMD) es una compañía estadounidense de semiconductores con sede en Santa Clara, California, que desarrolla procesadores de computación y productos tecnológicos similares de consumo. Sus productos principales incluyen microprocesadores, chipsets para placas base, circuitos integrados auxiliares, procesadores embebidos y procesadores gráficos para servidores, estaciones de trabajo, computadores personales y aplicaciones para sistemas embebidos.</p>
+            <a href="/Template/Amd.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">Catalogo de grafica AMD</a>
+          </div>
+              </div>
+            </div>
+            
     </main>
 </body>
 </html>

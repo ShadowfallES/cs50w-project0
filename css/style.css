@@ -1,47 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Lato:ital@1&display=swap');
 *{
     padding: 0%;
     margin: 0%;
-    background: fff;
 }
 #main {
     display: grid;
-    grid-template-areas: "nvidia amd";
+    grid-template-areas: "header"
+                         "nvidia amd"
+                         "footer";
     margin: 5%;
 }
 img{
     width: 40%;
-    display:block;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
-#navegador ul{
-    list-style-type: none;
-    text-align: center;
- }
- #navegador li{
-    display: inline;
-    text-align: center;
-    margin: 0 10px 0 0;
- }
- #navegador li a {
-    padding: 2px 7px 2px 7px;
-    color: #666;
-    background-color: #eeeeee;
-    border: 1px solid #ccc;
-    text-decoration: none;
- }
- #navegador li a:hover{
-    background-color: #333333;
-    color: #ffffff;
- }
+:root {
+    --blue: #6257ff;
+  }
+  #navbar {
+    width: 100vw;
+    font-weight: bold;
+    background-color: #192024;
+    }
+    ul {
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1em 0;
+    }
+      li first-child {
+        margin-right: auto;
+        margin-left: 3em;
+      }
+  
+      li a {
+        color: white;
+        text-decoration: none;
+        padding-right: 5em;
+        position: relative;
+          transition: all ease-in-out 550ms;
+      }
+  
+      li a::after {
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0.4em;
+        width: 0%;
+        background-color: var(--blue);
+        bottom: -1em;
+        transition: all ease-in-out 250ms;
+      }
+  
+      li a:hover::after {
+        width:60%;
+      }
+      
+      li a:hover{
+        color:var(--blue);
+      }
 #nvidia{
     padding-right: 10%;
 }
+#Body{
+  background: #a5e8f0;
+   }
 @media(max-width: 600px){
     #main{
-        grid-template-areas: "nvidia"
+        grid-template-areas:"header" 
+                            "nvidia"
                             "amd";
         width: auto;
+        
         margin-top: 5%;
     }
+    #AMD{
+      margin-top: 5%;
+    }
+}
+p{
+    font-family: 'Kaisei Opti', serif;
+    text-align: justify;
+}
+.encabezado {
+  font-size: 1.4rem;
+  margin-bottom: 5%;
+  text-align: center;
 }
