@@ -30,10 +30,6 @@ img{
       align-items: center;
       padding: 1em 0;
     }
-      li first-child {
-        margin-right: auto;
-        margin-left: 3em;
-      }
   
       li a {
         color: white;
@@ -65,7 +61,7 @@ img{
     padding-right: 10%;
 }
 #Body{
-  background: #a5e8f0;
+  background: #ffff;
    }
 @media(max-width: 600px){
     #main{
@@ -78,6 +74,9 @@ img{
     }
     #AMD{
       margin-top: 5%;
+    }
+    p{
+      text-align: center;
     }
 }
 p{

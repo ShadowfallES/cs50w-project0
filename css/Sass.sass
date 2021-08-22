@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*  
+    padding: 0%;
+    margin: 0%;
+
+// Ejemplo de Variable 
+
+$base-color: #192024
+$border-dark: rgba($base-color, 1)
+
+$color-text : #6257ff
+$text-color : rgba($color-text, 1)
+
+/* Ejemplo de Anidados */
+
+#navbar 
+    width: 100vw;
+    font-weight: bold;
+
+    /* Uso de Variable */
+    background: $border-dark;
+    
+    ul 
+      margin: 0;
+      list-style-type: none;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 1em 0;
+    
+    li a 
+        color: white;
+        text-decoration: none;
+        padding-right: 5em;
+        position: relative;
+        transition: all ease-in-out 550ms;
+      
+  
+    li a::after 
+        content: "";
+        position: absolute;
+        display: block;
+        height: 0.4em;
+        width: 0%;
+        background-color: $text-color;
+        bottom: -1em;
+        transition: all ease-in-out 250ms;
+      
+  
+    li a:hover::after 
+            width: 60%;
+      
+      
+    li a:hover
+        color: $text-color;
+
+// Ejemplo de Herencia
+header
+    @extend #navbar;
+
+// Ejemplo de Variable  para la fuentes
+
+$font-stack: 'Oswald', sans-serif;
+$font-stack2: 'Nunito', sans-serif;
+
+h3
+    font-family: $font-stack
+
+.card-text    
+    font-family: $font-stack2;    
+    text-align: justify;
+     

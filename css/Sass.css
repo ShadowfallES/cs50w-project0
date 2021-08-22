@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+/* Ejemplo de Anidados */
+#navbar, header {
+  width: 100vw;
+  font-weight: bold;
+  /* Uso de Variable */
+  background: #192024;
+}
+
+#navbar ul, header ul {
+  margin: 0;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em 0;
+}
+
+#navbar li a, header li a {
+  color: white;
+  text-decoration: none;
+  padding-right: 5em;
+  position: relative;
+  -webkit-transition: all ease-in-out 550ms;
+  transition: all ease-in-out 550ms;
+}
+
+#navbar li a::after, header li a::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.4em;
+  width: 0%;
+  background-color: #6257ff;
+  bottom: -1em;
+  -webkit-transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+}
+
+#navbar li a:hover::after, header li a:hover::after {
+  width: 60%;
+}
+
+#navbar li a:hover, header li a:hover {
+  color: #6257ff;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+.card-text {
+  font-family: "Nunito", sans-serif;
+  text-align: justify;
+}
+/*# sourceMappingURL=Sass.css.map */
