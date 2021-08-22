@@ -83,8 +83,12 @@ p{
     font-family: 'Kaisei Opti', serif;
     text-align: justify;
 }
+.centrar{
+    display: flex;
+    justify-content: center;
+}
 .encabezado {
   font-size: 1.4rem;
   margin-bottom: 5%;
-  text-align: center;
+  text-align: justify;
 }
